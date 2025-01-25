@@ -9,13 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "compress-pdf": "^0.5.1",
     "jszip": "^3.10.1",
     "next": "15.1.6",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^3.11.174",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-dropzone": "^14.3.5"
+    "react-dropzone": "^14.3.5",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
