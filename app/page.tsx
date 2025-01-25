@@ -1,35 +1,9 @@
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="border-b border-gray-100 bg-[#1a237e] text-white">
-        <div className="max-w-[1320px] mx-auto px-12 py-3 flex items-center justify-between">
-          <div className="flex items-center space-x-8">
-            <Link href="/" className="text-xl font-bold flex items-center">
-              <svg className="w-8 h-8 mr-2 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              LocalPDF
-            </Link>
-            <nav className="hidden md:flex items-center space-x-6">
-              <Link href="/all-tools" className="text-white/80 hover:text-white">All Tools</Link>
-              <Link href="/compress-pdf" className="text-white/80 hover:text-white">Compress</Link>
-              <Link href="/edit-pdf" className="text-white/80 hover:text-white">Edit</Link>
-              <Link href="/split-pdf" className="text-white/80 hover:text-white">Split</Link>
-              <Link href="/merge-pdf" className="text-white/80 hover:text-white">Merge</Link>
-            </nav>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Link href="/pricing" className="text-white/80 hover:text-white">Pricing</Link>
-            <Link href="/login" className="bg-white text-[#1a237e] px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">
-              Login
-            </Link>
-          </div>
-        </div>
-      </header>
-
       <div className="max-w-[1320px] mx-auto px-8 py-8 relative">
         {/* Background Pattern */}
         <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
@@ -161,5 +135,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  )
+  );
 }
